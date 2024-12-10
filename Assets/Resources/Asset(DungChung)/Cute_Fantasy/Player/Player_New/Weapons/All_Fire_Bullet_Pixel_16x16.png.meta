@@ -10471,15 +10471,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: All_Fire_Bullet_Pixel_16x16_494
+      name: 1
       rect:
         serializedVersion: 2
         x: 373
         y: 59
         width: 24
         height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: -0.020646414, y: 0.50000226}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -11720,6 +11720,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      1: -1954348303
       All_Fire_Bullet_Pixel_16x16_0: -9260166
       All_Fire_Bullet_Pixel_16x16_1: -63388387
       All_Fire_Bullet_Pixel_16x16_10: 1975460696
@@ -12159,7 +12160,6 @@ TextureImporter:
       All_Fire_Bullet_Pixel_16x16_491: 1792348540
       All_Fire_Bullet_Pixel_16x16_492: 1270742260
       All_Fire_Bullet_Pixel_16x16_493: -1433014597
-      All_Fire_Bullet_Pixel_16x16_494: -1954348303
       All_Fire_Bullet_Pixel_16x16_495: -1183668210
       All_Fire_Bullet_Pixel_16x16_496: 1449837681
       All_Fire_Bullet_Pixel_16x16_497: 1941081341

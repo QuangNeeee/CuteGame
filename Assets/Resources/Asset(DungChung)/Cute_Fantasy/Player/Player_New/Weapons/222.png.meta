@@ -580,15 +580,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 222_23
+      name: 1
       rect:
         serializedVersion: 2
         x: 330
         y: 397
         width: 43
         height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: -0.030254984, y: 0.5000008}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1808,6 +1808,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      1: 202068829
       222_0: -1198838828
       222_1: 940537990
       222_10: -1443705964
@@ -1824,7 +1825,6 @@ TextureImporter:
       222_20: 1272716259
       222_21: -988134696
       222_22: -1242667798
-      222_23: 202068829
       222_24: -302537303
       222_25: 385060371
       222_26: 751183049
