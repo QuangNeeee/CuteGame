@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 001eca48f28e2df4cb00f7caeae22c92
+guid: 1f7376c54bfd143028ae295f2db18ce1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,51 +93,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI_Selectors_0
+      name: tilemap_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 539
-        width: 24
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53eadebe1159a49b6aed7b09ee861b09
-      internalID: -1542724192
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Selectors_1
-      rect:
-        serializedVersion: 2
-        x: 106
-        y: 538
-        width: 27
-        height: 29
+        x: 97
+        y: 321
+        width: 15
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +111,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d41e42d0cc8e14c3bb7d8fc711eb4ccd
-      internalID: -960341629
+      spriteID: 7da73e2bfce254c2f8d8b8c076e35748
+      internalID: -1444851720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 417
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0be1a8c21c84962a58f99dd891cad0
+      internalID: 301329706
       vertices: []
       indices: 
       edges: []
@@ -162,8 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      UI_Selectors_0: -1542724192
-      UI_Selectors_1: -960341629
+      tilemap_0: -1444851720
+      tilemap_1: 301329706
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
