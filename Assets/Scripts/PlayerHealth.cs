@@ -19,7 +19,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
     private Flash flash;
 
     const string HEALTH_SLIDER_TEXT = "Heart Slider";
-    const string TOWN_TEXT = "Map 3";
+    const string TOWN_TEXT = "Map3";
     readonly int DEATH_HASH = Animator.StringToHash("Death");
 
     protected override void Awake()
