@@ -12,7 +12,8 @@ public class CameraController : Singleton<CameraController>
         SetPlayerCameraFollow();
     }
 
-    public void SetPlayerCameraFollow() {
+    public void SetPlayerCameraFollow()
+    {
         cinemachineVirtualCamera = FindObjectOfType<CinemachineVirtualCamera>();
         cinemachineVirtualCamera.Follow = PlayerController.Instance.transform;
     }
