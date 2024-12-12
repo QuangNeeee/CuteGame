@@ -13,6 +13,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
     [SerializeField] private float knockBackThrustAmount = 10f;
     [SerializeField] private float damageRecoveryTime = 1f;
 
+    Vector2 checkPos;
     private Slider healthSlider;
     private int currentHealth;
     private bool canTakeDamage = true;
@@ -31,13 +32,14 @@ public class PlayerHealth : Singleton<PlayerHealth>
         audioManagement = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManagement>();
         flash = GetComponent<Flash>();
         knockback = GetComponent<Knockback>();
+        
     }
 
     private void Start()
     {
         isDead = false;
         currentHealth = maxHealth;
-
+        checkPos = transform.position;
         UpdateHealthSlider();
     }
 
@@ -82,6 +84,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
             audioManagement.PlaySFX(audioManagement.Death);
             Destroy(ActiveWeapon.Instance.gameObject);
             currentHealth = 0;
+            //transform.position = checkPos;
             GetComponent<Animator>().SetTrigger(DEATH_HASH);
             StartCoroutine(DeathLoadSceneRoutine());
         }
@@ -91,7 +94,13 @@ public class PlayerHealth : Singleton<PlayerHealth>
     {
         yield return new WaitForSeconds(2f);
         Destroy(gameObject);
+        ////SceneManager.LoadScene("Map3");
+        //transform.position = checkPos;
         SceneManager.LoadScene(TOWN_TEXT);
+    }
+    public void UpdateCheckPoint(Vector2 pos)
+    {
+        checkPos = pos;
     }
 
     private IEnumerator DamageRecoveryRoutine()

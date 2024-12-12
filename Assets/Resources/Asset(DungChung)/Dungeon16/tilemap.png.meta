@@ -105,7 +105,7 @@ TextureImporter:
         width: 15
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -126,7 +126,7 @@ TextureImporter:
         width: 15
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,6 +134,48 @@ TextureImporter:
       bones: []
       spriteID: da0be1a8c21c84962a58f99dd891cad0
       internalID: 301329706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_2
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 419
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead00f6a1237a41a1900ce5ca4e738b4
+      internalID: -1406332776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_3
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 419
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a10809482aa4206b1cf6544d535d51
+      internalID: 354937485
       vertices: []
       indices: 
       edges: []
@@ -151,6 +193,8 @@ TextureImporter:
     nameFileIdTable:
       tilemap_0: -1444851720
       tilemap_1: 301329706
+      tilemap_2: -1406332776
+      tilemap_3: 354937485
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
