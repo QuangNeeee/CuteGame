@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class PlayerHealth : Singleton<PlayerHealth>
@@ -18,6 +19,8 @@ public class PlayerHealth : Singleton<PlayerHealth>
     private Knockback knockback;
     private Flash flash;
 
+    private AudioManagement audioManagement;
+
     const string HEALTH_SLIDER_TEXT = "Heart Slider";
     const string TOWN_TEXT = "Map3";
     readonly int DEATH_HASH = Animator.StringToHash("Death");
@@ -25,7 +28,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
     protected override void Awake()
     {
         base.Awake();
-
+        audioManagement = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManagement>();
         flash = GetComponent<Flash>();
         knockback = GetComponent<Knockback>();
     }
@@ -76,6 +79,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
         if (currentHealth <= 0 && !isDead)
         {
             isDead = true;
+            audioManagement.PlaySFX(audioManagement.Death);
             Destroy(ActiveWeapon.Instance.gameObject);
             currentHealth = 0;
             GetComponent<Animator>().SetTrigger(DEATH_HASH);
