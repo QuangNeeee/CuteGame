@@ -20,7 +20,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
     private Knockback knockback;
     private Flash flash;
 
-    //private AudioManagement audioManagement;
+    private AudioManagement audioManagement;
 
     const string HEALTH_SLIDER_TEXT = "Heart Slider";
     const string TOWN_TEXT = "Map3";
@@ -29,7 +29,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
     protected override void Awake()
     {
         base.Awake();
-        //audioManagement = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManagement>();
+        audioManagement = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManagement>();
         flash = GetComponent<Flash>();
         knockback = GetComponent<Knockback>();
         
@@ -81,7 +81,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
         if (currentHealth <= 0 && !isDead)
         {
             isDead = true;
-            //audioManagement.PlaySFX(audioManagement.Death);
+            audioManagement.PlaySFX(audioManagement.Death);
             Destroy(ActiveWeapon.Instance.gameObject);
             currentHealth = 0;
             //transform.position = checkPos;
