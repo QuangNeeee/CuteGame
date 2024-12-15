@@ -11,16 +11,18 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     private float timeBetweenAttacks;
 
     private bool attackButtonDown, isAttacking = false;
+    private AudioManagement audioManagement;
 
     protected override void Awake()
     {
         base.Awake();
-
+        //audioManagement = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManagement>();
         playerControls = new PlayerControles();
     }
 
     private void OnEnable()
     {
+
         playerControls.Enable();
     }
 
@@ -65,6 +67,7 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
 
     private void StartAttacking()
     {
+        
         attackButtonDown = true;
     }
 
@@ -77,6 +80,7 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     {
         if (attackButtonDown && !isAttacking && CurrentActiveWeapon)
         {
+            
             AttackCooldown();
             (CurrentActiveWeapon as IWeapon).Attack();
         }
