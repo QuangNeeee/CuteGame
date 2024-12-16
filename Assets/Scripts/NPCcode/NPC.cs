@@ -13,12 +13,14 @@ public class NPC : MonoBehaviour
     public GameObject OnActiveInven1;
     public GameObject OnActiveInven2;
     public GameObject OnActiveInven3;
+
     
 
 
     public GameObject contButton;
     public float wordSpeed;
     public bool playerIsClose;
+    public GameObject npc;
 
      void Update()
     {
@@ -27,12 +29,15 @@ public class NPC : MonoBehaviour
             if(NPCPanel.activeInHierarchy)
             {
                 zeroText();
+                Destroy(npc);
+                npc = null;
+
             }
             else
             {
                 NPCPanel.SetActive(true);
                 OnActiveInven.SetActive(true);
-                
+                //StopAllCoroutines();
                 StartCoroutine(Typing());
             }
         }
