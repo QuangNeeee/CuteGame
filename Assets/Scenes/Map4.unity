@@ -122,6 +122,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &27486298
 GameObject:
   m_ObjectHideFlags: 0
@@ -120529,3 +120530,9 @@ SceneRoots:
   - {fileID: 736097794225321704}
   - {fileID: 1287501445}
   - {fileID: 674966772}
+=======
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots: []
+>>>>>>> Thien
