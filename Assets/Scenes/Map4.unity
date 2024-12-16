@@ -93073,7 +93073,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 386317814472711833, guid: 0c5d97cc26e204f1dbcf94a736c92fca, type: 3}
       propertyPath: m_Name
-      value: portal
+      value: portalchange
       objectReference: {fileID: 0}
     - target: {fileID: 700668287109667180, guid: 0c5d97cc26e204f1dbcf94a736c92fca, type: 3}
       propertyPath: m_LocalPosition.x
