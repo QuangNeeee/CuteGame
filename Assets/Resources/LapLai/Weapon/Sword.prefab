@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: -988774926, guid: 3e997b44ca8a24ae586509ecae75f73b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -132,6 +132,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4686659385136135762}
     m_Modifications:
+    - target: {fileID: 1655694106317316046, guid: f99f2ef0756fb4d39af2cff8e56d1f2e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4416384159342265126, guid: f99f2ef0756fb4d39af2cff8e56d1f2e, type: 3}
       propertyPath: m_Name
       value: HAND

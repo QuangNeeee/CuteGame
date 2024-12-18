@@ -9,10 +9,10 @@ public class NPC : MonoBehaviour
     public TMP_Text NPCText;
     public string[] dialogue;
     private int index;
-    public GameObject OnActiveInven;
-    public GameObject OnActiveInven1;
-    public GameObject OnActiveInven2;
-    public GameObject OnActiveInven3;
+    //public GameObject OnActiveInven;
+    //public GameObject OnActiveInven1;
+    //public GameObject OnActiveInven2;
+    //public GameObject OnActiveInven3;
 
     
 
@@ -36,7 +36,7 @@ public class NPC : MonoBehaviour
             else
             {
                 NPCPanel.SetActive(true);
-                OnActiveInven.SetActive(true);
+                //OnActiveInven.SetActive(true);
                 //StopAllCoroutines();
                 StartCoroutine(Typing());
             }
